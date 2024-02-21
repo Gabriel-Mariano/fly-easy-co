@@ -1,6 +1,6 @@
 import { SafeAreaView } from "react-native";
 import StackRoutes from "./routes/stack";
-import { HomeScreen } from "./views/home";
+import { HomeScreen } from "./views/authenticated/home";
 
 function Main(){
     return (
