@@ -7,7 +7,7 @@ function LoginScreen() {
     return (
         <View style={styles.container}>
             <ImageBackground source={Splash} resizeMode="cover" style={styles.imageBackground}>
-                
+
             </ImageBackground>
         </View>
     )
