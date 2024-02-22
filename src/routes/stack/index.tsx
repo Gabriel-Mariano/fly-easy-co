@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { HomeScreen } from '../../views/authenticated/home';
-import { LoginScreen } from "../../views/auth/login";
+import { HomeScreen } from '@src/views/authenticated/home';
+import { LoginScreen } from "@src/views/auth/login";
 
 type RootStackParam = {
     Login:undefined,

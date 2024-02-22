@@ -1,6 +1,6 @@
 import React from "react";
-import { ImageBackground, View, Text } from "react-native";
-import Splash from "../../../assets/splash.png";
+import Splash from "@src/assets/splash.png";
+import { ImageBackground, View } from "react-native";
 import { styles } from "./styles/styles";
 
 function LoginScreen() {
