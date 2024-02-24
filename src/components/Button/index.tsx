@@ -12,7 +12,7 @@ interface IButtonProps extends TouchableOpacityProps {
 const Button:React.FC<IButtonProps> = ({ title, icon, ...rest}) => {
     const renderIcon = () => {
         return icon 
-            ? <Icon name={icon} />
+            ? <Icon name={icon} testID="icon-id"/>
             : null
     }
 
