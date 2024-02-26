@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import { Colors } from "@src/themes";
 
 const styles = StyleSheet.create({
     containerInput:{
@@ -9,7 +10,7 @@ const styles = StyleSheet.create({
 
         borderWidth:1,
         borderRadius:5,
-        borderColor:"#dcdcdc",
+        borderColor:Colors.placeholder,
         height:48,
     },
     input:{
@@ -22,7 +23,7 @@ const styles = StyleSheet.create({
         display:'flex',
         justifyContent:'center',
         alignItems:'center',
-        backgroundColor:"#dcdcdc"
+        backgroundColor:Colors.placeholder
     },
     contentRight:{
         width:'12%',
@@ -30,7 +31,7 @@ const styles = StyleSheet.create({
         display:'flex',
         justifyContent:'center',
         alignItems:'center',
-        backgroundColor:"#dcdcdc"
+        backgroundColor:Colors.placeholder
     }
 });
 
