@@ -13,6 +13,9 @@ const styles = StyleSheet.create({
 
         borderRadius:5,
         backgroundColor:Colors.primary
+    },
+    titleButton:{
+        fontFamily:'Poppins-SemiBold'
     }
 });
 

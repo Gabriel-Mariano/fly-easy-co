@@ -20,7 +20,7 @@ const Button:React.FC<IButtonProps> = ({ title, icon, ...rest}) => {
         <TouchableOpacity style={styles.container} {...rest}>
             {renderIcon()}
             <View>
-                <Text>{title}</Text>
+                <Text style={styles.titleButton}>{title}</Text>
             </View>
             <View/>
         </TouchableOpacity>
