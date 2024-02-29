@@ -31,7 +31,7 @@ function LoginScreen() {
             </ImageBackground>
             </TouchableWithoutFeedback>
         </View>
-    )
+    );
 }
 
 export { LoginScreen }

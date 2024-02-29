@@ -8,7 +8,7 @@ function HomeScreen() {
         <View style={styles.container}>
             <Text>Hello everyone 🖖🏼</Text>
         </View>
-    )
+    );
 }
 
 export { HomeScreen }

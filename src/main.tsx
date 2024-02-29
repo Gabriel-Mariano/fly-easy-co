@@ -1,13 +1,15 @@
-import { SafeAreaView } from "react-native";
-import StackRoutes from "./routes/stack";
-import { HomeScreen } from "./views/authenticated/home";
+import { NavigationContainer } from "@react-navigation/native";
+import { SafeAreaProvider } from "react-native-safe-area-context";
+import { Routes } from "./routes/routes";
 
 function Main(){
     return (
-        <SafeAreaView style={{ flex:1 }}>
-           <StackRoutes></StackRoutes>
-        </SafeAreaView>
-    )
+        <NavigationContainer>
+            <SafeAreaProvider>
+                <Routes/>
+            </SafeAreaProvider>
+        </NavigationContainer>
+    );
 }
 
 export default Main;
