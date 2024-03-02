@@ -8,7 +8,9 @@ export const Colors = {
     success:'#00cd66',
     danger:"#d63230",
     black:"#000",
+    white:"#fff",
     frenchBlue:"#1c77c3",
     pictonBlue:"#39a9db",
     skyBlue:"#40bcd8",
+    unBlue:"#7e889a"
 }

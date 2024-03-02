@@ -3,7 +3,7 @@ import AuthenticatedRoutes from "./authenticated/stack";
 import AuthRoutes from "./unhatenticated";
 
 const Routes = () => {
-    const isAuthenticated = false; 
+    const isAuthenticated = true; 
 
     return isAuthenticated ? <AuthenticatedRoutes /> : <AuthRoutes />;
 }
