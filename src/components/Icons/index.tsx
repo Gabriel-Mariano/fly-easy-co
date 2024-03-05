@@ -30,7 +30,7 @@ export const Icon = {
     EvilIcons,
 }
 
-interface IMyIconProps {
+interface IVectorIconProps {
     name:string,
     type:IconProps | any,
     color?:string,
@@ -38,7 +38,7 @@ interface IMyIconProps {
     style?:any
 } 
 
-const Vector:React.FC<IMyIconProps> = ({ name, type, color, size = 18, style }) => {
+const VectorIcon:React.FC<IVectorIconProps> = ({ name, type, color, size = 18, style }) => {
     const Tag = type;
 
     return (
@@ -50,4 +50,4 @@ const Vector:React.FC<IMyIconProps> = ({ name, type, color, size = 18, style }) 
     )
 }
 
-export { Vector };
+export { VectorIcon };
