@@ -44,7 +44,7 @@ const VectorIcon:React.FC<IVectorIconProps> = ({ name, type, color, size = 18, s
     return (
         <>
         {type && name && (
-            <Tag name={name} size={size} color={color} style={style}/>
+            <Tag name={name} size={size} color={color} style={style} testID="icon-id"/>
         )}
         </>
     )
