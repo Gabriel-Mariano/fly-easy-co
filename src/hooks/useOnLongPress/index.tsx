@@ -1,4 +1,4 @@
-import { useRef, useEffect } from "react";
+import { useRef } from "react";
 
 const useOnLongPress = (callback:()=> void, delay = 200) => {
     const timeRef = useRef<NodeJS.Timeout | null>(null);
@@ -13,12 +13,6 @@ const useOnLongPress = (callback:()=> void, delay = 200) => {
             timeRef.current = null;
         }
     }
-
-    useEffect(()=> {
-        return () => {
-            stopInterval();
-        }
-    },[])
 
     return {
         onPressIn: startInterval,

@@ -16,6 +16,7 @@ const AirProgress:React.FC<IAirProgressProps> = ({ status }) => {
                     <VectorIcon 
                         type={Icon.Ionicons} 
                         name="airplane"  
+                        color={Colors.black}
                         style={{
                             position:'absolute',
                             left:-12,
@@ -41,6 +42,7 @@ const AirProgress:React.FC<IAirProgressProps> = ({ status }) => {
                    <VectorIcon 
                         type={Icon.Ionicons} 
                         name="airplane"  
+                        color={Colors.black}
                         style={{
                             position:'absolute',
                             left: '65%', 
@@ -61,6 +63,7 @@ const AirProgress:React.FC<IAirProgressProps> = ({ status }) => {
                     <VectorIcon 
                         type={Icon.Ionicons} 
                         name="airplane"  
+                        color={Colors.black}
                         style={{
                             position:'absolute',
                             left:-12,
