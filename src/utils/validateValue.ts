@@ -1,4 +1,4 @@
-type ValidateAndFormatValueProps = {
+export type ValidateAndFormatValueProps = {
     currentValue:string,
     min?:number;
     max?:number;
