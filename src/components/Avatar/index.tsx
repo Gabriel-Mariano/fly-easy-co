@@ -12,6 +12,7 @@ const Avatar:React.FC<IAvatarProps> = ({ imageUrl, alt }) => {
     return (
         <View style={styles.container}>
             <Image 
+                testID="avatar-id"
                 style={styles.image} 
                 source={imageUrl ? imageUrl : Me} 
                 alt={alt}
