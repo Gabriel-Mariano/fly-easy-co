@@ -1,16 +1,19 @@
 import React, { ReactNode } from "react";
 import { TextInputProps } from "react-native";
-import { TextInput, View, Text } from "react-native";
+import { TextInput, View, StyleProp, TextStyle } from "react-native";
+import { Text } from "../Text";
 import { styles } from "./styles/styles";
 
 interface IInputProps extends TextInputProps {
     label?:string,
+    labelStyle?:StyleProp<TextStyle>,
     contentLeft?:ReactNode,
     contentRight?:ReactNode
 }
 
 const Input:React.FC<IInputProps> = ({ 
     label,
+    labelStyle,
     contentLeft,
     contentRight,
     ...rest
@@ -34,7 +37,7 @@ const Input:React.FC<IInputProps> = ({
 
     return (
         <>
-        {label && <Text>{label}</Text>}
+        {label && <Text style={labelStyle}>{label}</Text>}
         <View style={[styles.containerInput, rest.style]}>
             {renderOnTheLeft()}
             <TextInput 
