@@ -30,7 +30,10 @@ const CounterInput:React.FC<ICounterInput> = ({
 }) => {
 
     const onChangeText = (newValue:string) => {
-        setterValue(newValue)
+        const regex = /^\d*$/;
+        regex.test(newValue)
+            ?  setterValue(newValue)
+            :  setterValue(value)
     }
 
     const decrementFast = () => {
@@ -67,10 +70,12 @@ const CounterInput:React.FC<ICounterInput> = ({
             )}
            <View style={styles.container}>
                 <TouchableOpacity 
-                    onPressIn={decrement}
+                    testID="decrement-button-id"
+                    onPress={decrement}
                     onPressOut={handleDecrementLongPress.onPressOut}
                     onLongPress={handleDecrementLongPress.onPressIn}
-                    disabled={min && value <= min ? true : false}
+                    // disabled={min && value <= min ? true : false}
+                    // disabled
                     style={[styles.decrementButton,
                         {
                             backgroundColor: min && value <= min ? Colors.placeholder : Colors.unBlue
@@ -83,6 +88,7 @@ const CounterInput:React.FC<ICounterInput> = ({
                 </TouchableOpacity>
                 <View>
                     <Input 
+                        testID="input-id"
                         value={String(value)}
                         onChangeText={onChangeText} 
                         onBlur={handleOnBlur}
@@ -93,7 +99,8 @@ const CounterInput:React.FC<ICounterInput> = ({
                     />
                 </View>
                 <TouchableOpacity 
-                    onPressIn={increment}
+                    testID="increment-button-id"
+                    onPress={increment}
                     onPressOut={handleIncrementLongPress.onPressOut}
                     onLongPress={handleIncrementLongPress.onPressIn}
                     disabled={max && value >= max ? true : false}

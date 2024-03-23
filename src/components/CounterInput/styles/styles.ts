@@ -14,11 +14,11 @@ const styles = StyleSheet.create({
         justifyContent:"center",
         alignItems:"center",
 
-        width:50,
+        width:50, 
         height:'100%',
       
-        borderTopLeftRadius:30,
-        borderBottomLeftRadius:30,
+        borderTopLeftRadius:10,
+        borderBottomLeftRadius:10,
 
         backgroundColor: Colors.unBlue,
     },
@@ -27,10 +27,12 @@ const styles = StyleSheet.create({
         fontFamily:"Poppins-Medium"
     },
     input:{
-        width:100,
-        borderRadius:0,
+        fontFamily:"Poppins-Regular",
+
+        width:50,
         height:'100%',
-        
+
+        borderRadius:0,
         borderLeftWidth:0,
         borderRightWidth:0
     },
@@ -42,8 +44,8 @@ const styles = StyleSheet.create({
         height:'100%',
        
         backgroundColor: Colors.unBlue,
-        borderTopRightRadius:30,
-        borderBottomRightRadius:30
+        borderTopRightRadius:10,
+        borderBottomRightRadius:10
     },
     incrementButtonText:{
         color:Colors.white,
