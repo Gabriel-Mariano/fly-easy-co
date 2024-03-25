@@ -74,8 +74,7 @@ const CounterInput:React.FC<ICounterInput> = ({
                     onPress={decrement}
                     onPressOut={handleDecrementLongPress.onPressOut}
                     onLongPress={handleDecrementLongPress.onPressIn}
-                    // disabled={min && value <= min ? true : false}
-                    // disabled
+                    disabled={min !== undefined && value === min}
                     style={[styles.decrementButton,
                         {
                             backgroundColor: min && value <= min ? Colors.placeholder : Colors.unBlue
@@ -103,7 +102,7 @@ const CounterInput:React.FC<ICounterInput> = ({
                     onPress={increment}
                     onPressOut={handleIncrementLongPress.onPressOut}
                     onLongPress={handleIncrementLongPress.onPressIn}
-                    disabled={max && value >= max ? true : false}
+                    disabled={max !== undefined && value === max}
                     style={[styles.incrementButton,
                         {
                             backgroundColor: max && value >= max ? Colors.placeholder : Colors.unBlue

@@ -1,4 +1,4 @@
-import { fireEvent, render, waitFor,  } from "@testing-library/react-native";
+import { fireEvent, render, waitFor, within,  } from "@testing-library/react-native";
 import { CounterInput } from "../index";
 
 describe("Counter Input", ()=> {
@@ -67,5 +67,33 @@ describe("Counter Input", ()=> {
         fireEvent.press(incrementButton);
 
         expect(value).toBe(2);
+    });
+    it("should disable the decrement button when the value is equal to the minimum", async () => {
+        let value = 0;
+        const mockDecrement = jest.fn()
+
+        const { getByTestId, debug } = render(<CounterInput {...props} value={value} increment={mockDecrement} min={0}/>);
+
+        const decrementButton = getByTestId("decrement-button-id"); 
+       
+        expect(decrementButton).toBeDisabled();
+
+        fireEvent.press(decrementButton);
+    
+        expect(mockDecrement).not.toHaveBeenCalled();
+    });
+    it("should disable the increment button when the value is equal to the maximum", async () => {
+        let value = 1;
+        const mockIncrement = jest.fn()
+
+        const { getByTestId, debug } = render(<CounterInput {...props} value={value} increment={mockIncrement} max={1}/>);
+
+        const incrementButton = getByTestId("increment-button-id"); 
+       
+        expect(incrementButton).toBeDisabled();
+
+        fireEvent.press(incrementButton);
+    
+        expect(mockIncrement).not.toHaveBeenCalled();
     });
 })
