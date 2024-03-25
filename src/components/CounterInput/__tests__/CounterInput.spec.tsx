@@ -72,7 +72,7 @@ describe("Counter Input", ()=> {
         let value = 0;
         const mockDecrement = jest.fn()
 
-        const { getByTestId, debug } = render(<CounterInput {...props} value={value} increment={mockDecrement} min={0}/>);
+        const { getByTestId, debug } = render(<CounterInput {...props} value={value} decrement={mockDecrement} min={0}/>);
 
         const decrementButton = getByTestId("decrement-button-id"); 
        
