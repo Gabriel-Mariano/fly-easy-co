@@ -12,5 +12,6 @@ export const Colors = {
     frenchBlue:"#1c77c3",
     pictonBlue:"#39a9db",
     skyBlue:"#40bcd8",
-    unBlue:"#7e889a"
+    unBlue:"#7e889a",
+    chocolate:"#541717"
 }
