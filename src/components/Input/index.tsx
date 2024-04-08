@@ -42,6 +42,7 @@ const Input:React.FC<IInputProps> = ({
             {renderOnTheLeft()}
             <TextInput 
                 {...rest}
+                placeholderTextColor="#767676"
                 style={[
                     styles.input,
                     {
