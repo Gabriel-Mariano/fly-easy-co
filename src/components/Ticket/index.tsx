@@ -5,13 +5,13 @@ import { Icon, VectorIcon } from "../Icons";
 import { styles } from "./styles/styles";
 import { AirProgress } from "../AirProgress";
 import { AirCardHeader } from "../AirCardHeader";
-import { IFlightsProps } from "@src/views/authenticated/home";
+import { IFlightsProps } from "@src/@types/flights";
 
 interface ICardFlightsProps extends TouchableOpacityProps {
     props: IFlightsProps;
 }
 
-const Card:React.FC<ICardFlightsProps> = ({ props, ...rest }) => {  
+const Ticket:React.FC<ICardFlightsProps> = ({ props, ...rest }) => {  
     return (
         <TouchableOpacity 
             style={styles.container} 
@@ -65,4 +65,4 @@ const Card:React.FC<ICardFlightsProps> = ({ props, ...rest }) => {
     )
 }
 
-export { Card };
+export { Ticket };

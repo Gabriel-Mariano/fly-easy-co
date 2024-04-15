@@ -1,5 +1,5 @@
 import { fireEvent, render } from "@testing-library/react-native";
-import { Card } from "../index";
+import { Ticket } from "../index";
 import { IFlightsProps } from "@src/views/authenticated/home";
 import { ImageProps } from "react-native";
 
@@ -27,7 +27,7 @@ describe("Card Component", ()=> {
     } as IFlightsProps;
 
     it("should render Card Component correctly", ()=> {
-        const { getByText, getByTestId } = render(<Card props={mockProps} />);
+        const { getByText, getByTestId } = render(<Ticket props={mockProps} />);
 
         expect(getByText("Origin")).toBeTruthy();
         expect(getByText("ORI")).toBeTruthy();
@@ -44,7 +44,7 @@ describe("Card Component", ()=> {
     it("should call the fn when clicked", ()=> {
         const mockFn = jest.fn();
         const { getByTestId } = render(
-            <Card props={mockProps} testID="card-id" onPress={mockFn}/>
+            <Ticket props={mockProps} testID="card-id" onPress={mockFn}/>
         );
 
         const component = getByTestId("card-id");

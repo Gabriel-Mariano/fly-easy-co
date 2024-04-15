@@ -1,0 +1,49 @@
+{
+    "flights":[
+        {
+            "id_flights":"1",
+            "origin": { "locate": "New York", "acronymOrigin":"NYC" },
+            "destination":{ "locate":"Boston", "acronymDestination":"BOS" },
+            "startDate": "2024-04-15",
+            "endDate": "2024-04-15",
+            "departureTime":"12:35",
+            "landingTime": "14:15",
+            "status": "Em Rota",
+            "company":{
+                "name":"Latam Brazilian",
+                "logo":"",
+                "code":"AD 4024"
+            }
+        },
+        {
+            "id_flights":"2",
+            "origin": { "locate": "New York", "acronymOrigin":"NYC" },
+            "destination":{ "locate":"Boston", "acronymDestination":"BOS" },
+            "startDate": "2024-04-15",
+            "endDate": "2024-04-15",
+            "departureTime":"18:35",
+            "landingTime": "20:15",
+            "status": "Agendado",
+            "company":{
+                "name":"Latam Brazilian",
+                "logo":"",
+                "code":"AD 4025"
+            }
+        },
+        {
+            "id_flights":"3",
+            "origin": { "locate": "New York", "acronymOrigin":"NYC" },
+            "destination":{ "locate":"Boston", "acronymDestination":"BOS" },
+            "startDate": "2024-04-15",
+            "endDate": "2024-04-15",
+            "departureTime":"05:35",
+            "landingTime": "07:15",
+            "status": "Pousado",
+            "company":{
+                "name":"Latam Brazilian",
+                "logo":"",
+                "code":"AD 4026"
+            }
+        }
+    ]
+}

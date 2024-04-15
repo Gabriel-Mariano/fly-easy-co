@@ -6,7 +6,6 @@ const width = Dimensions.get('window').width;
 const styles = StyleSheet.create({
     containerCarousel:{
        marginVertical:20,
-       
     },
     carouselLabel:{
         color:Colors.unBlue,
